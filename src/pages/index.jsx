@@ -81,7 +81,7 @@ const Index = () => (
 					Things I love
 				</Heading>
 				<Paragraph>
-					Music, Cooking, Organizing things (TDA), Playing piano, Travel.
+					Music, <Link href="https://buho.academy">Teaching others</Link>, Cooking, Organizing things (OCD), <Link href="https://www.reverbnation.com/salo777">Playing piano</Link>, Travel.
 				</Paragraph>
 			</Section>
 		</Container>
