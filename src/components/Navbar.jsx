@@ -36,7 +36,7 @@ const Navbar = props => {
 
 	return (
 		<Box position = "fixed" as = "nav" w = "100%" bg = {useColorModeValue("#FFFFFF40", "#20202380")}
-				 style = {{ backdropFilter: "blur(10px)" }} z-index = {1} {...props}>
+				 style = {{ backdropFilter: "blur(10px)" , zIndex : 1}}  {...props}>
 			<Container display = "flex"
 								 p = {2}
 								 maxW = "container.md"
