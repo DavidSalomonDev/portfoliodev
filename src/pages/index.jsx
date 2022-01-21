@@ -1,17 +1,36 @@
 import { ChevronRightIcon } from "@chakra-ui/icons";
-import { Box, Button, Container, Heading, Image, Link, useColorModeValue } from "@chakra-ui/react";
+import {
+	Box,
+	Button,
+	Container,
+	Heading,
+	Icon,
+	Image,
+	Link,
+	List,
+	ListItem,
+	SimpleGrid,
+	useColorModeValue
+} from "@chakra-ui/react";
 import { BioSection, BioYear } from "components/Bio";
+import { GridItem } from "components/Grid-Item";
 import Layout from "components/layouts/Article";
 import Paragraph from "components/Paragraph";
 import Section from "components/Section";
 import NextLink from "next/link";
+import { IoLogoGithub, IoLogoLinkedin, IoLogoTwitter } from "react-icons/io5";
+import thumbBuho from "../../public/images/buho-logo.png";
+import thumbBlog from "../../public/images/blog.png";
+import thumbBuhoDark from "../../public/images/buho-logo-dark.png";
+import thumbBlogDark from "../../public/images/blog-dark.png";
 
 const Index = () => (
 	<Layout>
 		<Container>
 			<Box borderRadius = "lg"
 					 bg = { useColorModeValue("whiteAlpha.500", "whiteAlpha.200") }
-					 mb = { 6 }
+					 mt={4}
+					 mb = { 8 }
 					 p = { 3 }
 					 align = "center">
 				Hi, I'm a Frontend Developer based in El Salvador!
@@ -81,8 +100,50 @@ const Index = () => (
 					Things I love
 				</Heading>
 				<Paragraph>
-					Music, <Link href="https://buho.academy">Teaching others</Link>, Cooking, Organizing things (OCD), <Link href="https://www.reverbnation.com/salo777">Playing piano</Link>, Travel.
+					Music, <Link href = "https://buho.academy" target = "_blank">Teaching others</Link>, Cooking, Organizing
+					things (OCD), <Link
+					href = "https://www.reverbnation.com/salo777" target = "_blank">Playing piano</Link>, Travel.
 				</Paragraph>
+			</Section>
+			<Section delay = { 0.3 }>
+				<Heading as = "h3" variant = "section-title">
+					On the web
+				</Heading>
+				<List mb = { 5 }>
+					<ListItem>
+						<Link href = "https://github.com/DavidSalomonDev" target = "_blank">
+							<Button variant = "ghost"
+											colorScheme = "teal"
+											leftIcon = { <Icon as = { IoLogoGithub } /> }>@DavidSalomonDev</Button>
+						</Link>
+					</ListItem>
+					<ListItem>
+						<Link href = "https://twitter.com/DavidSalomonDev" target = "_blank">
+							<Button variant = "ghost"
+											colorScheme = "teal"
+											leftIcon = { <Icon as = { IoLogoTwitter } /> }>@DavidSalomonDev</Button>
+						</Link>
+					</ListItem>
+					<ListItem>
+						<Link href = "https://www.linkedin.com/in/davidsalomondev/" target = "_blank">
+							<Button variant = "ghost"
+											colorScheme = "teal"
+											leftIcon = { <Icon as = { IoLogoLinkedin } /> }>@DavidSalomonDev</Button>
+						</Link>
+					</ListItem>
+				</List>
+				<SimpleGrid columns = { [ 1, 2, 2 ] } gap = { 6 }>
+					<GridItem href = "https://buho.academy"
+										title = "Buho Academy"
+										thumbnail = { useColorModeValue(thumbBuho, thumbBuhoDark) }>
+						Buho Academy: My online courses platform in Spanish
+					</GridItem>
+					<GridItem href = "https://blog.davidsalomon.dev"
+										title = "My Blog"
+										thumbnail = { useColorModeValue(thumbBlog, thumbBlogDark) }>
+						I'm learning web development and I'm tracking all my achievements (and failures) in my learning journey.
+					</GridItem>
+				</SimpleGrid>
 			</Section>
 		</Container>
 	</Layout>

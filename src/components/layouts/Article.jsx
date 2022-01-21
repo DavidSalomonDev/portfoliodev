@@ -28,4 +28,4 @@ const Layout = ({ children, title }) => (
 	</motion.article>
 );
 
-export default Layout
+export default Layout;

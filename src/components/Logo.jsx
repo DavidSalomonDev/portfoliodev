@@ -12,26 +12,26 @@ const LogoBox = styled.span`
   height: 30px;
   line-height: 20px;
   padding: 10px;
-	transition: all .3s ease;
+  transition: all .3s ease;
 
   &:hover img {
     transform: scale(.9);
   }
 `;
 const Logo = () => {
-	const footPrintImg = `/images/buho${useColorModeValue("", "-dark")}.png`;
+	const footPrintImg = `/images/buho${ useColorModeValue("", "-dark") }.png`;
 	return (
 		<Link href = "/">
 			<a>
 				<LogoBox>
-					<Image src = {footPrintImg}
-								 width = {20}
-								 height={32}
+					<Image src = { footPrintImg }
+								 width = { 20 }
+								 height = { 32 }
 								 alt = "Logo" />
-					<Text color = {useColorModeValue("gray.800", "whiteAlpha.900")}
+					<Text color = { useColorModeValue("gray.800", "whiteAlpha.900") }
 								fontFamily = "M PLUS Rounded 1c"
 								fontWeight = "bold"
-								ml = {3}>
+								ml = { 3 }>
 						David Salomón
 					</Text>
 				</LogoBox></a>

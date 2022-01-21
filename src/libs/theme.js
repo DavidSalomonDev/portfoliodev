@@ -24,10 +24,10 @@ const components = {
 		}
 	},
 	Link: {
-		baseStyle: props => ( {
+		baseStyle: props => ({
 			color: mode("#3D7AED", "#FF63C3")(props),
 			textUnderlineOffset: 3
-		} )
+		})
 	}
 };
 
