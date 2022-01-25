@@ -10,7 +10,7 @@ export default class Document extends NextDocument {
 					<link rel = "shortcut icon" href = "images/buho-favicon.png" />
 
 					{/* !--Primary Meta Tags -- */ }
-					<title>David Salomón Martínez Valladares - Frontend Developer</title>
+					<title>David Salomon Martinez Valladares - Frontend Developer</title>
 					<meta name = "title" content = "David Salomon - Frontend Developer" />
 					<meta name = "description"
 								content = "I'm a frontend developer using React and NodeJS, I have a passion for growth and help others, send me an email: me@davidsalomon.dev" />
@@ -32,15 +32,17 @@ export default class Document extends NextDocument {
 					<meta property = "twitter:image"
 								content = "https://david-salomon.com/assets/images/banner.png" />
 
-					{/*<!-- Global site tag (gtag.js) - Google Analytics -->*/}
-					<script async src="https://www.googletagmanager.com/gtag/js?id=G-N12W1DV5MJ"></script>
-					<script>
-					window.dataLayer = window.dataLayer || [];
-					function gtag(){dataLayer.push(arguments);}
-					gtag('js', new Date());
-
-					gtag('config', 'G-N12W1DV5MJ');
-					</script>
+					{/*<!-- Global site tag (gtag.js) - Google Analytics -->*/ }
+					<script async src = "https://www.googletagmanager.com/gtag/js?id=G-N12W1DV5MJ" />
+					<script dangerouslySetInnerHTML = { {
+						__html: `
+						window.dataLayer = window.dataLayer || [];
+						function gtag(){dataLayer.push(arguments);}
+						gtag('js', new Date());
+						gtag('config', 'G-N12W1DV5MJ');
+						`
+					} }
+					/>
 				</Head>
 				<body>
 				<ColorModeScript initialColorMode = { theme.config.initialColorMode } />
