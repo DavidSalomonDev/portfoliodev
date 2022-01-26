@@ -38,7 +38,7 @@ const Index = () => (
 			<Box display = { { md: "flex" } }>
 				<Box flexGrow = { 1 }>
 					<Heading as = "h2" variant = "page-title">
-						David Salomón
+						David Salomón Martínez Valladares
 					</Heading>
 					<p>BBA / Frontend Developer / Tech Support</p>
 				</Box>
