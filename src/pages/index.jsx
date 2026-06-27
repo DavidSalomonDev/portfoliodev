@@ -77,7 +77,8 @@ const Index = () => (
           a Software Development Engineering degree at UES. Having evolved from
           my early days as a developer, I now focus on building scalable
           systems, driving cloud migrations, and architecting robust cloud
-          infrastructure.
+          infrastructure. Alongside my engineering work, I also provide English
+          coaching to help others grow professionally.
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/projects" passHref>
@@ -115,6 +116,11 @@ const Index = () => (
         </BioSection>
         <BioSection>
           <BioYear>Present</BioYear>
+          English coach, helping professionals improve their communication
+          skills.
+        </BioSection>
+        <BioSection>
+          <BioYear>Present</BioYear>
           In final year of Software Development Engineer degree at UES.
         </BioSection>
       </Section>
@@ -124,7 +130,7 @@ const Index = () => (
         </Heading>
         <Paragraph>
           Music,{" "}
-          <Link href="https://buho.academy" target="_blank">
+          <Link href="https://david-salomon.com" target="_blank">
             Teaching others
           </Link>
           , Cooking, Organizing things (OCD),{" "}
@@ -178,11 +184,11 @@ const Index = () => (
         </List>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
-            href="https://buho.academy"
-            title="Buho Academy"
+            href="https://david-salomon.com"
+            title="David Salomon"
             thumbnail={useColorModeValue(thumbBuho, thumbBuhoDark)}
           >
-            Buho Academy: My online courses platform in Spanish
+            david-salomon.com: My personal site, where I offer English coaching
           </GridItem>
           <GridItem
             href="https://blog.davidsalomon.dev"

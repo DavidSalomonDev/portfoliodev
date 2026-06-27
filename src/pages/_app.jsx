@@ -11,7 +11,7 @@ const App = ({ Component, pageProps, router }) => {
       <Fonts />
       <Script
         strategy="lazyOnload"
-        src={`https://www.googletagmanager.com/gtag/js?id=G-N12W1DV5MJ`}
+        src={`https://www.googletagmanager.com/gtag/js?id=G-HYZEXP8Z1B`}
       />
       <Script id="google-analytics" strategy="lazyOnload">
         {`
@@ -19,6 +19,7 @@ const App = ({ Component, pageProps, router }) => {
 					function gtag(){dataLayer.push(arguments);}
 					gtag('js', new Date());
 					gtag('config', 'G-N12W1DV5MJ');
+					gtag('config', 'G-HYZEXP8Z1B');
 				`}
       </Script>
       <Layout router={router}>

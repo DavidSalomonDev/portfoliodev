@@ -12,15 +12,15 @@ const styles = {
 const components = {
   Heading: {
     variants: {
-      "section-title": {
+      "section-title": (props) => ({
         textDecoration: "underline",
         fontSize: 20,
         textUnderlineOffset: 6,
-        textDecorationColor: "#525252",
+        textDecorationColor: mode("#525252", "#88CCCA")(props),
         textDecorationThickness: 4,
         marginTop: 3,
         marginBottom: 4
-      }
+      })
     }
   },
   Link: {
