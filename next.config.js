@@ -6,6 +6,11 @@ module.exports = {
         source: "/certificaciones",
         destination: "https://certifications-alpha.vercel.app/",
         permanent: true
+      },
+      {
+        source: "/azurecommands",
+        destination: "https://azure-commands.vercel.app/",
+        permanent: true
       }
     ];
   }
