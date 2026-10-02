@@ -22,6 +22,7 @@ const Project = () => {
             <Link
               href="https://weather-davidsalomondev.vercel.app/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               https://weather-davidsalomondev.vercel.app/{" "}
               <ExternalLinkIcon mx="2px" />
@@ -40,13 +41,14 @@ const Project = () => {
             <Link
               href="https://github.com/DavidSalomonDev/weather"
               target="_blank"
+              rel="noopener noreferrer"
             >
               https://github.com/DavidSalomonDev/weather{" "}
               <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
         </List>
-        <ProjectImage src="/images/projects/weather.png" alt="Devs United" />
+        <ProjectImage src="/images/projects/weather.png" alt="Weather App" />
       </Container>
     </Layout>
   );

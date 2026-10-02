@@ -43,7 +43,7 @@ const Index = () => (
           <Heading as="h2" variant="page-title">
             David Salomón Martínez Valladares
           </Heading>
-          <p>Cloud Engineer / Data Engineer / Software Developer</p>
+          <p>Cloud · Data · AI Engineer</p>
         </Box>
         <Box
           flexShrink={0}
@@ -130,11 +130,19 @@ const Index = () => (
         </Heading>
         <Paragraph>
           Music,{" "}
-          <Link href="https://david-salomon.com" target="_blank">
+          <Link
+            href="https://david-salomon.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Teaching others
           </Link>
           , Cooking, Organizing things (OCD),{" "}
-          <Link href="https://www.reverbnation.com/salo777" target="_blank">
+          <Link
+            href="https://www.reverbnation.com/salo777"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Playing piano
           </Link>
           , Travel.
@@ -146,7 +154,11 @@ const Index = () => (
         </Heading>
         <List mb={5}>
           <ListItem>
-            <Link href="https://github.com/davidsalomondev" target="_blank">
+            <Link
+              href="https://github.com/davidsalomondev"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button
                 variant="ghost"
                 colorScheme="teal"
@@ -157,7 +169,11 @@ const Index = () => (
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://twitter.com/davidsalomondev" target="_blank">
+            <Link
+              href="https://twitter.com/davidsalomondev"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button
                 variant="ghost"
                 colorScheme="teal"
@@ -171,6 +187,7 @@ const Index = () => (
             <Link
               href="https://www.linkedin.com/in/davidsalomondev/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <Button
                 variant="ghost"

@@ -20,7 +20,11 @@ const Project = () => {
         <List ml={4} my={4}>
           <ListItem>
             <Meta>Website</Meta>
-            <Link href="https://devs-united.vercel.app" target="_blank">
+            <Link
+              href="https://devs-united.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               https://devs-united.vercel.app <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
@@ -37,6 +41,7 @@ const Project = () => {
             <Link
               href="https://github.com/DavidSalomonDev/sprint-4_acamica"
               target="_blank"
+              rel="noopener noreferrer"
             >
               https://github.com/DavidSalomonDev/sprint-4_acamica{" "}
               <ExternalLinkIcon mx="2px" />
