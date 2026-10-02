@@ -14,9 +14,9 @@ import thumbBooks from "../../public/images/posts/programming-books.jpg";
 const Posts = () => {
   const t = useT();
   return (
-    <Layout title={t.posts.title}>
+    <Layout title={t.posts.title} description={t.posts.description}>
       <Container>
-        <Heading as="h4" fontSize={20} mb={4} mt={4}>
+        <Heading as="h1" fontSize={20} mb={4} mt={4}>
           {t.posts.heading}
         </Heading>
         <Section delay={0.2}>

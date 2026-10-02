@@ -1,0 +1,41 @@
+# David Salomón
+
+> Cloud, Data & AI Engineer based in El Salvador, available for remote freelance and contract work in cloud operations, data analysis and AI evaluation. Cloud Engineer at GBM, deploying, supporting and automating cloud environments for enterprise clients on Azure, Google Cloud, Oracle Cloud, AWS and IBM Cloud.
+
+Full name: David Salomón Martínez Valladares. The site is available in English (/) and Spanish (/es).
+
+## Profile
+
+- [About and experience](https://www.davidsalomon.dev/): skills, selected automation work at GBM, how I review data, certifications, experience and contact
+- [Perfil en español](https://www.davidsalomon.dev/es): the same profile in Spanish
+
+## Skills
+
+- Cloud: Azure, Google Cloud, AWS, Oracle Cloud, IBM Cloud, Azure CLI and PowerShell, backup and recovery, networking and security
+- Data: SQL, Python, Excel and Google Sheets, automated reporting, data validation and quality, data extraction and processing
+- AI: AI-assisted development, prompt engineering, reviewing AI outputs against explicit criteria, workflow automation
+- Development: TypeScript, JavaScript, React and Next.js, Node.js, Git
+
+## Selected work at GBM (client details are confidential)
+
+- Automated the assignment of monthly client-report tasks across the team
+- Managed the automation of backup creation for client workloads on Google Cloud
+- Automated daily backup status reports for Azure clients
+
+## Certifications
+
+- [Microsoft Certified: Azure Administrator Associate](https://learn.microsoft.com/en-us/users/davidsalomonmartinezvalladares-7390/credentials/951a6e3a2a8b6142) (issued Jun 2026, expires Jun 2027)
+- [Google Cloud Professional Cloud Architect](https://www.credly.com/badges/fbff7b8c-14d5-4d15-97da-0b409547a2f5/) (issued Oct 2023, expires Oct 2027)
+- [Google Cloud Associate Cloud Engineer](https://www.credly.com/badges/215ce9d9-b795-4b47-b9a0-5006460f007a/) (issued Dec 2022, expires Sep 2028)
+
+## Projects
+
+- [Azure Commands](https://www.davidsalomon.dev/projects/azure-commands): searchable catalog of 180+ Azure CLI and PowerShell commands and scripts with live parameter filling
+- [Cloud Certification Practice](https://www.davidsalomon.dev/projects/certifications): exam practice app with 1,550 questions across 5 certifications, built on a Python (PyMuPDF) and Node data pipeline
+- [All projects](https://www.davidsalomon.dev/projects)
+
+## Contact
+
+- Email: me@davidsalomon.dev
+- [LinkedIn](https://www.linkedin.com/in/davidsalomondev/)
+- [GitHub](https://github.com/DavidSalomonDev)

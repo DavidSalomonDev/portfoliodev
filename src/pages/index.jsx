@@ -16,6 +16,7 @@ import {
 } from "@chakra-ui/react";
 import { BioSection, BioYear } from "components/Bio";
 import { GridItem, ProjectGridItem } from "components/Grid-Item";
+import JsonLd from "components/JsonLd";
 import Layout from "components/layouts/Article";
 import Paragraph from "components/Paragraph";
 import Section from "components/Section";
@@ -23,6 +24,7 @@ import certifications from "data/certifications";
 import { featuredProjects } from "data/projects";
 import { CV_URL, EMAIL, SOCIALS } from "data/site";
 import { formatMonth, useLocale, useT } from "libs/i18n";
+import { homeSchema } from "libs/structured-data";
 import NextLink from "next/link";
 import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io5";
 import thumbBuho from "../../public/images/buho-logo.png";
@@ -36,7 +38,7 @@ const Card = ({ title, children }) => (
     borderRadius="lg"
     bg={useColorModeValue("whiteAlpha.500", "whiteAlpha.200")}
   >
-    <Heading as="h4" fontSize={16} mb={2}>
+    <Heading as="h3" fontSize={16} mb={2}>
       {title}
     </Heading>
     <Text fontSize={15}>{children}</Text>
@@ -51,6 +53,7 @@ const Index = () => {
 
   return (
     <Layout>
+      <JsonLd id="home" data={homeSchema(t, locale)} />
       <Container>
         <Box
           borderRadius="lg"
@@ -64,7 +67,7 @@ const Index = () => {
         </Box>
         <Box display={{ md: "flex" }}>
           <Box flexGrow={1}>
-            <Heading as="h2" variant="page-title">
+            <Heading as="h1" variant="page-title">
               {h.name}
             </Heading>
             <Text fontSize={18} fontWeight="semibold" mt={1}>
@@ -91,7 +94,7 @@ const Index = () => {
         </Box>
 
         <Section delay={0.1}>
-          <Heading as="h3" variant="section-title">
+          <Heading as="h2" variant="section-title">
             {h.aboutTitle}
           </Heading>
           {h.about.map((text) => (
@@ -102,13 +105,13 @@ const Index = () => {
         </Section>
 
         <Section delay={0.1}>
-          <Heading as="h3" variant="section-title">
+          <Heading as="h2" variant="section-title">
             {h.skillsTitle}
           </Heading>
           <SimpleGrid columns={[1, 2]} gap={6}>
             {h.skills.map((group) => (
               <Box key={group.title}>
-                <Heading as="h4" fontSize={16} mb={2}>
+                <Heading as="h3" fontSize={16} mb={2}>
                   {group.title}
                 </Heading>
                 <Wrap>
@@ -124,7 +127,7 @@ const Index = () => {
         </Section>
 
         <Section delay={0.2}>
-          <Heading as="h3" variant="section-title">
+          <Heading as="h2" variant="section-title">
             {h.workTitle}
           </Heading>
           <Text mb={4}>{h.workIntro}</Text>
@@ -138,7 +141,7 @@ const Index = () => {
         </Section>
 
         <Section delay={0.2}>
-          <Heading as="h3" variant="section-title">
+          <Heading as="h2" variant="section-title">
             {h.approachTitle}
           </Heading>
           <SimpleGrid columns={[1, 2]} gap={4}>
@@ -151,7 +154,7 @@ const Index = () => {
         </Section>
 
         <Section delay={0.3}>
-          <Heading as="h3" variant="section-title">
+          <Heading as="h2" variant="section-title">
             {h.featuredTitle}
           </Heading>
           <SimpleGrid columns={[1, 2, 2]} gap={6}>
@@ -180,7 +183,7 @@ const Index = () => {
         </Section>
 
         <Section delay={0.3}>
-          <Heading as="h3" variant="section-title">
+          <Heading as="h2" variant="section-title">
             {h.certificationsTitle}
           </Heading>
           {certifications.map((cert) => (
@@ -203,7 +206,7 @@ const Index = () => {
         </Section>
 
         <Section delay={0.3}>
-          <Heading as="h3" variant="section-title">
+          <Heading as="h2" variant="section-title">
             {h.experienceTitle}
           </Heading>
           {h.experience.map((item) => (
@@ -216,7 +219,7 @@ const Index = () => {
 
         <Section delay={0.3}>
           <Box id="contact" scrollMarginTop="80px">
-            <Heading as="h3" variant="section-title">
+            <Heading as="h2" variant="section-title">
               {h.contactTitle}
             </Heading>
             <Text mb={4}>{h.contactBody}</Text>
@@ -276,7 +279,7 @@ const Index = () => {
         </Section>
 
         <Section delay={0.3}>
-          <Heading as="h3" variant="section-title">
+          <Heading as="h2" variant="section-title">
             {h.webTitle}
           </Heading>
           <SimpleGrid columns={[1, 2, 2]} gap={6}>
@@ -298,7 +301,7 @@ const Index = () => {
         </Section>
 
         <Section delay={0.3}>
-          <Heading as="h3" variant="section-title">
+          <Heading as="h2" variant="section-title">
             {h.beyondTitle}
           </Heading>
           <Paragraph>

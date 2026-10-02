@@ -17,6 +17,8 @@ const es = {
 
   posts: {
     title: "Artículos",
+    description:
+      "Artículos de David Salomón sobre cómo entrar al mundo tech, vencer la parálisis por aprendizaje, documentar proyectos y habilidades blandas para developers.",
     heading: "Artículos populares (en inglés)"
   },
 
@@ -174,6 +176,8 @@ const es = {
 
   projects: {
     title: "Proyectos",
+    description:
+      "Proyectos de cloud, datos e IA de David Salomón: Azure Commands, una app de práctica de certificaciones cloud con un pipeline de datos en Python y proyectos web anteriores.",
     featuredTitle: "Destacados: Cloud · Datos · IA",
     privateNote:
       "La mayor parte de mi trabajo en la nube es para clientes de GBM y está en repositorios privados. Mira lo más destacado en la",

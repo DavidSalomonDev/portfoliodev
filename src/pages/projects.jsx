@@ -27,9 +27,12 @@ const Projects = () => {
   const p = t.projects;
 
   return (
-    <Layout title={p.title}>
+    <Layout title={p.title} description={p.description}>
       <Container>
-        <Heading as="h3" fontSize={20} mb={4} mt={4}>
+        <Heading as="h1" fontSize={24} mt={4} mb={6}>
+          {p.title}
+        </Heading>
+        <Heading as="h2" fontSize={20} mb={4}>
           {p.featuredTitle}
         </Heading>
         <ProjectGrid projects={featuredProjects} items={p.items} delay={0.1} />
@@ -41,7 +44,7 @@ const Projects = () => {
           .
         </Text>
 
-        <Heading as="h3" fontSize={20} mb={4}>
+        <Heading as="h2" fontSize={20} mb={4}>
           {p.archiveTitle}
         </Heading>
         <ProjectGrid projects={archivedProjects} items={p.items} delay={0.3} />

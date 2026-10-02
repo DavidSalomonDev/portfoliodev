@@ -1,6 +1,6 @@
 import { GridItemStyle } from "components/Grid-Item";
+import Seo from "components/Seo";
 import { motion } from "framer-motion";
-import Head from "next/head";
 
 const variants = {
   hidden: { opacity: 0, x: 0, y: 20 },
@@ -8,7 +8,7 @@ const variants = {
   exit: { opacity: 0, x: 0, y: 20 }
 };
 
-const Layout = ({ children, title }) => (
+const Layout = ({ children, title, description }) => (
   <motion.article
     initial="hidden"
     animate="enter"
@@ -18,10 +18,8 @@ const Layout = ({ children, title }) => (
     style={{ position: "relative" }}
   >
     <>
-      {title && (
-        <Head>
-          <title>{title} - David Salomón</title>
-        </Head>
+      {(title || description) && (
+        <Seo title={title} description={description} />
       )}
       {children}
       <GridItemStyle />

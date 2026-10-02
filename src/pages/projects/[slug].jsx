@@ -7,11 +7,13 @@ import {
   List,
   ListItem
 } from "@chakra-ui/react";
+import JsonLd from "components/JsonLd";
 import Layout from "components/layouts/Article";
 import Paragraph from "components/Paragraph";
 import { Meta, ProjectImage, Title } from "components/Work";
 import projects, { getProject } from "data/projects";
-import { useT } from "libs/i18n";
+import { useLocale, useT } from "libs/i18n";
+import { projectSchema } from "libs/structured-data";
 
 const ExternalLink = ({ href }) => (
   <Link href={href} target="_blank" rel="noopener noreferrer">
@@ -21,7 +23,7 @@ const ExternalLink = ({ href }) => (
 
 const CaseSection = ({ title, children }) => (
   <>
-    <Heading as="h4" fontSize={16} mt={6} mb={2}>
+    <Heading as="h2" fontSize={16} mt={6} mb={2}>
       {title}
     </Heading>
     <Paragraph>{children}</Paragraph>
@@ -30,11 +32,13 @@ const CaseSection = ({ title, children }) => (
 
 const Project = ({ slug }) => {
   const t = useT();
+  const locale = useLocale();
   const project = getProject(slug);
   const text = t.projects.items[slug];
 
   return (
-    <Layout title={text.title}>
+    <Layout title={text.title} description={text.summary}>
+      <JsonLd id="project" data={projectSchema(project, text, locale)} />
       <Container>
         <Title>
           {text.title} <Badge>{project.year}</Badge>

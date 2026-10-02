@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "next dev -H 0.0.0.0",
+    "prebuild": "node scripts/generate-sitemap.js",
     "build": "next build",
+    "start": "next start",
     "prettier": "prettier --write .",
     "lint": "next lint"
   },

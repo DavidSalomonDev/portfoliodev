@@ -7,12 +7,14 @@ import {
   Divider,
   Button
 } from "@chakra-ui/react";
+import Seo from "components/Seo";
 import { useT } from "libs/i18n";
 
 const NotFound = () => {
   const t = useT().notFound;
   return (
     <Container>
+      <Seo title={t.title} description={t.body} noindex />
       <Heading as="h1">{t.title}</Heading>
       <Text>{t.body}</Text>
       <Divider my={6} />

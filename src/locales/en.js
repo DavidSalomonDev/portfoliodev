@@ -17,6 +17,8 @@ const en = {
 
   posts: {
     title: "Posts",
+    description:
+      "Articles by David Salomón on moving into tech, beating learning paralysis, documenting projects and soft skills for developers.",
     heading: "Popular posts"
   },
 
@@ -174,6 +176,8 @@ const en = {
 
   projects: {
     title: "Projects",
+    description:
+      "Cloud, data and AI projects by David Salomón: Azure Commands, a cloud certification practice app with a Python data pipeline, and earlier web projects.",
     featuredTitle: "Featured: Cloud · Data · AI",
     privateNote:
       "Most of my cloud work is for GBM clients and lives in private repositories. See the highlights on the",
