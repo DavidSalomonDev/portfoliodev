@@ -44,7 +44,7 @@ const Posts = () => (
             href="https://blog.davidsalomon.dev/document-your-projects"
           ></GridItem>
           <GridItem
-            title="It's time to upgrade: Moving from a non-tech job to a developer career"
+            title="WTF are soft skills?"
             thumbnail={thumbSoft}
             href="https://blog.davidsalomon.dev/wtf-are-soft-skills"
           ></GridItem>

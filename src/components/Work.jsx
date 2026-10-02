@@ -1,11 +1,12 @@
 import NextLink from "next/link";
 import { Heading, Box, Image, Link, Badge } from "@chakra-ui/react";
 import { ChevronRightIcon } from "@chakra-ui/icons";
+import { useT } from "libs/i18n";
 
 export const Title = ({ children }) => (
   <Box>
     <NextLink href="/projects" passHref>
-      <Link>Projects</Link>
+      <Link>{useT().nav.projects}</Link>
     </NextLink>
     <span>
       &nbsp;

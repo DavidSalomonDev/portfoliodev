@@ -18,6 +18,7 @@ import {
 
 import { HamburgerIcon } from "@chakra-ui/icons";
 import ThemeToggleButton from "components/theme-toggle-button";
+import { useT } from "libs/i18n";
 
 const LinkItem = ({ href, path, children }) => {
   const active = path === href;
@@ -37,6 +38,7 @@ const LinkItem = ({ href, path, children }) => {
 
 const Navbar = (props) => {
   const { path } = props;
+  const t = useT();
 
   return (
     <Box
@@ -69,10 +71,13 @@ const Navbar = (props) => {
           mt={{ base: 4, md: 0 }}
         >
           <LinkItem href="/projects" path={path}>
-            Projects
+            {t.nav.projects}
           </LinkItem>
           <LinkItem href="/posts" path={path}>
-            Posts
+            {t.nav.posts}
+          </LinkItem>
+          <LinkItem href="/#contact" path={path}>
+            {t.nav.contact}
           </LinkItem>
         </Stack>
         <Box flex={1} align="right">
@@ -87,13 +92,16 @@ const Navbar = (props) => {
               />
               <MenuList>
                 <NextLink href="/" passHref>
-                  <MenuItem as={Link}>About</MenuItem>
+                  <MenuItem as={Link}>{t.nav.about}</MenuItem>
                 </NextLink>
                 <NextLink href="/projects" passHref>
-                  <MenuItem as={Link}>Projects</MenuItem>
+                  <MenuItem as={Link}>{t.nav.projects}</MenuItem>
                 </NextLink>
                 <NextLink href="/posts" passHref>
-                  <MenuItem as={Link}>Posts</MenuItem>
+                  <MenuItem as={Link}>{t.nav.posts}</MenuItem>
+                </NextLink>
+                <NextLink href="/#contact" passHref>
+                  <MenuItem as={Link}>{t.nav.contact}</MenuItem>
                 </NextLink>
               </MenuList>
             </Menu>
