@@ -17,6 +17,7 @@ import {
 } from "@chakra-ui/react";
 
 import { HamburgerIcon } from "@chakra-ui/icons";
+import LanguageToggle from "components/LanguageToggle";
 import ThemeToggleButton from "components/theme-toggle-button";
 import { useT } from "libs/i18n";
 
@@ -81,6 +82,7 @@ const Navbar = (props) => {
           </LinkItem>
         </Stack>
         <Box flex={1} align="right">
+          <LanguageToggle />
           <ThemeToggleButton />
           <Box ml={2} display={{ base: "inline-block", md: "none" }}>
             <Menu>

@@ -1,9 +1,29 @@
 const en = {
+  meta: {
+    title: "David Salomón - Cloud, Data & AI Engineer",
+    description:
+      "Cloud, Data & AI Engineer. Multi-cloud infrastructure on Azure, Google Cloud, AWS, Oracle Cloud and IBM Cloud, data analysis and quality with SQL and Python, and AI-powered automation. Available for remote freelance work.",
+    ogImageAlt: "David Salomón - Cloud, Data & AI Engineer",
+    ogLocale: "en_US"
+  },
+
   nav: {
     about: "About",
     projects: "Projects",
     posts: "Posts",
-    contact: "Contact"
+    contact: "Contact",
+    switchLanguage: "Ver en español"
+  },
+
+  posts: {
+    title: "Posts",
+    heading: "Popular posts"
+  },
+
+  notFound: {
+    title: "Not found",
+    body: "Sorry, the page you're looking for was not found.",
+    back: "Return to home"
   },
 
   home: {

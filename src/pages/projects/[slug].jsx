@@ -76,8 +76,10 @@ const Project = ({ slug }) => {
   );
 };
 
-export const getStaticPaths = () => ({
-  paths: projects.map(({ slug }) => ({ params: { slug } })),
+export const getStaticPaths = ({ locales }) => ({
+  paths: locales.flatMap((locale) =>
+    projects.map(({ slug }) => ({ params: { slug }, locale }))
+  ),
   fallback: false
 });
 

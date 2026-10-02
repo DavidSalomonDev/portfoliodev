@@ -47,6 +47,7 @@ const Index = () => {
   const t = useT();
   const locale = useLocale();
   const h = t.home;
+  const cvUrl = CV_URL[locale] ?? CV_URL.en;
 
   return (
     <Layout>
@@ -230,11 +231,11 @@ const Index = () => {
                   {h.emailMe}
                 </Button>
               </WrapItem>
-              {CV_URL && (
+              {cvUrl && (
                 <WrapItem>
                   <Button
                     as="a"
-                    href={CV_URL}
+                    href={cvUrl}
                     download
                     colorScheme="teal"
                     variant="outline"

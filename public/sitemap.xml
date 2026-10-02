@@ -1,13 +1,143 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.davidsalomon.dev/</loc><lastmod>2026-10-02</lastmod></url>
-  <url><loc>https://www.davidsalomon.dev/projects</loc><lastmod>2026-10-02</lastmod></url>
-  <url><loc>https://www.davidsalomon.dev/posts</loc><lastmod>2026-10-01</lastmod></url>
-  <url><loc>https://www.davidsalomon.dev/projects/azure-commands</loc><lastmod>2026-10-02</lastmod></url>
-  <url><loc>https://www.davidsalomon.dev/projects/certifications</loc><lastmod>2026-10-02</lastmod></url>
-  <url><loc>https://www.davidsalomon.dev/projects/devsunited</loc><lastmod>2026-10-01</lastmod></url>
-  <url><loc>https://www.davidsalomon.dev/projects/hotels</loc><lastmod>2026-10-01</lastmod></url>
-  <url><loc>https://www.davidsalomon.dev/projects/JSprojects</loc><lastmod>2026-10-01</lastmod></url>
-  <url><loc>https://www.davidsalomon.dev/projects/gifos</loc><lastmod>2026-10-01</lastmod></url>
-  <url><loc>https://www.davidsalomon.dev/projects/weather</loc><lastmod>2026-10-01</lastmod></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://www.davidsalomon.dev/</loc>
+    <lastmod>2026-10-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.davidsalomon.dev/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.davidsalomon.dev/es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.davidsalomon.dev/"/>
+  </url>
+  <url>
+    <loc>https://www.davidsalomon.dev/es</loc>
+    <lastmod>2026-10-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.davidsalomon.dev/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.davidsalomon.dev/es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.davidsalomon.dev/"/>
+  </url>
+  <url>
+    <loc>https://www.davidsalomon.dev/projects</loc>
+    <lastmod>2026-10-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.davidsalomon.dev/projects"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.davidsalomon.dev/es/projects"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.davidsalomon.dev/projects"/>
+  </url>
+  <url>
+    <loc>https://www.davidsalomon.dev/es/projects</loc>
+    <lastmod>2026-10-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.davidsalomon.dev/projects"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.davidsalomon.dev/es/projects"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.davidsalomon.dev/projects"/>
+  </url>
+  <url>
+    <loc>https://www.davidsalomon.dev/posts</loc>
+    <lastmod>2026-10-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.davidsalomon.dev/posts"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.davidsalomon.dev/es/posts"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.davidsalomon.dev/posts"/>
+  </url>
+  <url>
+    <loc>https://www.davidsalomon.dev/es/posts</loc>
+    <lastmod>2026-10-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.davidsalomon.dev/posts"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.davidsalomon.dev/es/posts"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.davidsalomon.dev/posts"/>
+  </url>
+  <url>
+    <loc>https://www.davidsalomon.dev/projects/azure-commands</loc>
+    <lastmod>2026-10-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.davidsalomon.dev/projects/azure-commands"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.davidsalomon.dev/es/projects/azure-commands"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.davidsalomon.dev/projects/azure-commands"/>
+  </url>
+  <url>
+    <loc>https://www.davidsalomon.dev/es/projects/azure-commands</loc>
+    <lastmod>2026-10-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.davidsalomon.dev/projects/azure-commands"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.davidsalomon.dev/es/projects/azure-commands"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.davidsalomon.dev/projects/azure-commands"/>
+  </url>
+  <url>
+    <loc>https://www.davidsalomon.dev/projects/certifications</loc>
+    <lastmod>2026-10-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.davidsalomon.dev/projects/certifications"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.davidsalomon.dev/es/projects/certifications"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.davidsalomon.dev/projects/certifications"/>
+  </url>
+  <url>
+    <loc>https://www.davidsalomon.dev/es/projects/certifications</loc>
+    <lastmod>2026-10-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.davidsalomon.dev/projects/certifications"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.davidsalomon.dev/es/projects/certifications"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.davidsalomon.dev/projects/certifications"/>
+  </url>
+  <url>
+    <loc>https://www.davidsalomon.dev/projects/devsunited</loc>
+    <lastmod>2026-10-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.davidsalomon.dev/projects/devsunited"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.davidsalomon.dev/es/projects/devsunited"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.davidsalomon.dev/projects/devsunited"/>
+  </url>
+  <url>
+    <loc>https://www.davidsalomon.dev/es/projects/devsunited</loc>
+    <lastmod>2026-10-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.davidsalomon.dev/projects/devsunited"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.davidsalomon.dev/es/projects/devsunited"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.davidsalomon.dev/projects/devsunited"/>
+  </url>
+  <url>
+    <loc>https://www.davidsalomon.dev/projects/hotels</loc>
+    <lastmod>2026-10-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.davidsalomon.dev/projects/hotels"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.davidsalomon.dev/es/projects/hotels"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.davidsalomon.dev/projects/hotels"/>
+  </url>
+  <url>
+    <loc>https://www.davidsalomon.dev/es/projects/hotels</loc>
+    <lastmod>2026-10-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.davidsalomon.dev/projects/hotels"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.davidsalomon.dev/es/projects/hotels"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.davidsalomon.dev/projects/hotels"/>
+  </url>
+  <url>
+    <loc>https://www.davidsalomon.dev/projects/JSprojects</loc>
+    <lastmod>2026-10-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.davidsalomon.dev/projects/JSprojects"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.davidsalomon.dev/es/projects/JSprojects"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.davidsalomon.dev/projects/JSprojects"/>
+  </url>
+  <url>
+    <loc>https://www.davidsalomon.dev/es/projects/JSprojects</loc>
+    <lastmod>2026-10-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.davidsalomon.dev/projects/JSprojects"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.davidsalomon.dev/es/projects/JSprojects"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.davidsalomon.dev/projects/JSprojects"/>
+  </url>
+  <url>
+    <loc>https://www.davidsalomon.dev/projects/gifos</loc>
+    <lastmod>2026-10-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.davidsalomon.dev/projects/gifos"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.davidsalomon.dev/es/projects/gifos"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.davidsalomon.dev/projects/gifos"/>
+  </url>
+  <url>
+    <loc>https://www.davidsalomon.dev/es/projects/gifos</loc>
+    <lastmod>2026-10-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.davidsalomon.dev/projects/gifos"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.davidsalomon.dev/es/projects/gifos"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.davidsalomon.dev/projects/gifos"/>
+  </url>
+  <url>
+    <loc>https://www.davidsalomon.dev/projects/weather</loc>
+    <lastmod>2026-10-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.davidsalomon.dev/projects/weather"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.davidsalomon.dev/es/projects/weather"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.davidsalomon.dev/projects/weather"/>
+  </url>
+  <url>
+    <loc>https://www.davidsalomon.dev/es/projects/weather</loc>
+    <lastmod>2026-10-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.davidsalomon.dev/projects/weather"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.davidsalomon.dev/es/projects/weather"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.davidsalomon.dev/projects/weather"/>
+  </url>
 </urlset>

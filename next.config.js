@@ -1,5 +1,11 @@
 module.exports = {
   reactStrictMode: true,
+  i18n: {
+    locales: ["en", "es"],
+    defaultLocale: "en",
+    // The language is chosen by the URL you share (/ or /es), not the visitor's browser
+    localeDetection: false
+  },
   async redirects() {
     return [
       {
