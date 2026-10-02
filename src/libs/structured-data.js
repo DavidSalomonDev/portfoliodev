@@ -11,7 +11,7 @@ const person = (t) => ({
   name: "David Salomón Martínez Valladares",
   alternateName: "David Salomón",
   url: `${SITE_URL}/`,
-  image: `${SITE_URL}/images/david.png`,
+  image: `${SITE_URL}/images/david.jpg`,
   email: `mailto:${EMAIL}`,
   jobTitle: "Cloud Engineer",
   description: t.meta.description,
