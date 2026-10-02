@@ -31,5 +31,8 @@
     "eslint": "^8.7.0",
     "eslint-config-next": "^12.0.8",
     "prettier": "^2.5.1"
+  },
+  "allowScripts": {
+    "core-js-pure@3.20.3": true
   }
 }
