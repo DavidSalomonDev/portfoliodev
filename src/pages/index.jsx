@@ -5,7 +5,6 @@ import {
   Container,
   Heading,
   Icon,
-  Image,
   Link,
   SimpleGrid,
   Tag,
@@ -25,8 +24,10 @@ import { featuredProjects } from "data/projects";
 import { CV_URL, EMAIL, SOCIALS } from "data/site";
 import { formatMonth, useLocale, useT } from "libs/i18n";
 import { homeSchema } from "libs/structured-data";
+import Image from "next/image";
 import NextLink from "next/link";
 import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io5";
+import photoDavid from "../../public/images/david.webp";
 import thumbBuho from "../../public/images/buho-logo.png";
 import thumbBlog from "../../public/images/blog.png";
 import thumbBuhoDark from "../../public/images/buho-logo-dark.png";
@@ -80,16 +81,25 @@ const Index = () => {
             ml={{ md: 6 }}
             align="center"
           >
-            <Image
+            <Box
               borderColor="whiteAlpha.800"
               borderWidth={2}
               borderStyle="solid"
-              maxWidth="100px"
+              w="100px"
+              h="100px"
               display="inline-block"
               borderRadius="full"
-              src="/images/david.png"
-              alt={h.photoAlt}
-            />
+              overflow="hidden"
+              lineHeight={0}
+            >
+              <Image
+                src={photoDavid}
+                alt={h.photoAlt}
+                width={100}
+                height={100}
+                priority
+              />
+            </Box>
           </Box>
         </Box>
 

@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from "react";
-import { Box, Spinner } from "@chakra-ui/react";
+import { PcContainer, PcSpinner } from "components/Pc-Loader";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import { loadGLTFModel } from "libs/model";
@@ -68,7 +68,10 @@ const Pc = () => {
       scene.add(ambientLight);
 
       const controls = new OrbitControls(camera, renderer.domElement);
-      controls.autoRotate = true;
+      const reduceMotion = window.matchMedia(
+        "(prefers-reduced-motion: reduce)"
+      ).matches;
+      controls.autoRotate = !reduceMotion;
       controls.target = target;
       setControls(controls);
 
@@ -87,7 +90,7 @@ const Pc = () => {
 
         frame = frame <= 100 ? frame + 1 : frame;
 
-        if (frame <= 100) {
+        if (frame <= 100 && !reduceMotion) {
           const p = initialCameraPosition;
           const rotSpeed = -easeOutCirc(frame / 120) * Math.PI * 20;
 
@@ -117,27 +120,7 @@ const Pc = () => {
   }, [renderer, handleWindowResize]);
 
   return (
-    <Box
-      ref={refContainer}
-      className="pc"
-      m="auto"
-      mt={["-70px", "-180px", "-300px"]}
-      mb={["-40px", "-140px", "-200px"]}
-      w={[280, 480, 640]}
-      h={[280, 480, 640]}
-      position="relative"
-    >
-      {loading && (
-        <Spinner
-          size="xl"
-          position="absolute"
-          left="50%"
-          top="50%"
-          ml="calc(0px - var(--spinner-size) / 2)"
-          mt="calc(0px - var(--spinner-size))"
-        />
-      )}
-    </Box>
+    <PcContainer ref={refContainer}>{loading && <PcSpinner />}</PcContainer>
   );
 };
 

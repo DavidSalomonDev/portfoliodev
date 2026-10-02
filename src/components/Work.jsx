@@ -1,5 +1,6 @@
 import NextLink from "next/link";
-import { Heading, Box, Image, Link, Badge } from "@chakra-ui/react";
+import { Heading, Box, Link, Badge } from "@chakra-ui/react";
+import Image from "next/image";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import { useT } from "libs/i18n";
 
@@ -19,8 +20,25 @@ export const Title = ({ children }) => (
   </Box>
 );
 
+// src is a static image import, so next/image knows its size and serves
+// resized WebP/AVIF. Small screenshots are never stretched past their width.
 export const ProjectImage = ({ src, alt }) => (
-  <Image borderRadius="lg" w="full" src={src} alt={alt} mb={4} />
+  <Box
+    maxW={`${src.width}px`}
+    mx="auto"
+    mb={4}
+    borderRadius="lg"
+    overflow="hidden"
+    lineHeight={0}
+  >
+    <Image
+      src={src}
+      alt={alt}
+      layout="responsive"
+      sizes="(max-width: 768px) 100vw, 720px"
+      placeholder="blur"
+    />
+  </Box>
 );
 
 export const Meta = ({ children }) => (

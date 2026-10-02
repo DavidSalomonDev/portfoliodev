@@ -12,7 +12,11 @@ const es = {
     projects: "Proyectos",
     posts: "Artículos",
     contact: "Contacto",
-    switchLanguage: "View in English"
+    switchLanguage: "View in English",
+    label: "Navegación principal",
+    menu: "Abrir menú",
+    theme: "Cambiar tema de color",
+    skip: "Saltar al contenido"
   },
 
   posts: {

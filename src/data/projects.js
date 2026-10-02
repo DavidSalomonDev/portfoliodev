@@ -1,12 +1,23 @@
 // Non-translatable project data. Titles and descriptions live in
 // src/locales/<locale>.js under projects.items[slug].
-import thumbAzureCommands from "../../public/images/projects/azure-commands.webp";
-import thumbCertifications from "../../public/images/projects/certifications.webp";
-import thumbDevsUnited from "../../public/images/projects/devsunited.png";
-import thumbHotels from "../../public/images/projects/hotels.png";
-import thumbJSprojects from "../../public/images/projects/50projects.png";
-import thumbGifos from "../../public/images/projects/gifos.png";
-import thumbWeather from "../../public/images/projects/weather.png";
+import imgN50projects1 from "../../public/images/projects/50projects-1.webp";
+import imgN50projects2 from "../../public/images/projects/50projects-2.webp";
+import imgN50projects3 from "../../public/images/projects/50projects-3.webp";
+import imgN50projects from "../../public/images/projects/50projects.webp";
+import imgAzureCommands from "../../public/images/projects/azure-commands.webp";
+import imgCertifications from "../../public/images/projects/certifications.webp";
+import imgDevsunited1 from "../../public/images/projects/devsunited-1.webp";
+import imgDevsunited2 from "../../public/images/projects/devsunited-2.webp";
+import imgDevsunited from "../../public/images/projects/devsunited.webp";
+import imgGifos1 from "../../public/images/projects/gifos-1.webp";
+import imgGifos2 from "../../public/images/projects/gifos-2.webp";
+import imgGifos3 from "../../public/images/projects/gifos-3.webp";
+import imgGifos from "../../public/images/projects/gifos.webp";
+import imgHotels1 from "../../public/images/projects/hotels-1.webp";
+import imgHotels2 from "../../public/images/projects/hotels-2.webp";
+import imgHotels3 from "../../public/images/projects/hotels-3.webp";
+import imgHotels from "../../public/images/projects/hotels.webp";
+import imgWeather from "../../public/images/projects/weather.webp";
 
 const projects = [
   {
@@ -17,8 +28,8 @@ const projects = [
       "Next.js, TypeScript, Tailwind CSS, shadcn/ui, MDX, Azure CLI, PowerShell",
     website: "https://azure-commands.vercel.app",
     repo: "https://github.com/DavidSalomonDev/AzureCommands",
-    thumbnail: thumbAzureCommands,
-    images: ["/images/projects/azure-commands.webp"]
+    thumbnail: imgAzureCommands,
+    images: [imgAzureCommands]
   },
   {
     slug: "certifications",
@@ -28,8 +39,8 @@ const projects = [
       "Next.js (App Router), TypeScript, Tailwind CSS, Python (PyMuPDF), Node.js",
     website: "https://certifications-alpha.vercel.app",
     repo: "https://github.com/DavidSalomonDev/certifications",
-    thumbnail: thumbCertifications,
-    images: ["/images/projects/certifications.webp"]
+    thumbnail: imgCertifications,
+    images: [imgCertifications]
   },
   {
     slug: "devsunited",
@@ -38,12 +49,8 @@ const projects = [
     stack: "ReactJS, Sass, Firebase",
     website: "https://devs-united.vercel.app",
     repo: "https://github.com/DavidSalomonDev/sprint-4_acamica",
-    thumbnail: thumbDevsUnited,
-    images: [
-      "/images/projects/devsunited.png",
-      "/images/projects/devsunited -1.png",
-      "/images/projects/devsunited -2.png"
-    ]
+    thumbnail: imgDevsunited,
+    images: [imgDevsunited, imgDevsunited1, imgDevsunited2]
   },
   {
     slug: "hotels",
@@ -52,13 +59,8 @@ const projects = [
     stack: "ReactJS, CSS Modules",
     website: "https://sprint-2-acamica.vercel.app/",
     repo: "https://github.com/DavidSalomonDev/sprint-2_acamica",
-    thumbnail: thumbHotels,
-    images: [
-      "/images/projects/hotels.png",
-      "/images/projects/hotels -1.png",
-      "/images/projects/hotels -2.png",
-      "/images/projects/hotels -3.png"
-    ]
+    thumbnail: imgHotels,
+    images: [imgHotels, imgHotels1, imgHotels2, imgHotels3]
   },
   {
     slug: "JSprojects",
@@ -67,13 +69,8 @@ const projects = [
     stack: "HTML, CSS, JavaScript",
     website: "https://50daysproject.vercel.app/",
     repo: "https://github.com/DavidSalomonDev/50daysproject",
-    thumbnail: thumbJSprojects,
-    images: [
-      "/images/projects/50projects.png",
-      "/images/projects/50projects -1.png",
-      "/images/projects/50projects -2.png",
-      "/images/projects/50projects -3.png"
-    ]
+    thumbnail: imgN50projects,
+    images: [imgN50projects, imgN50projects1, imgN50projects2, imgN50projects3]
   },
   {
     slug: "gifos",
@@ -82,13 +79,8 @@ const projects = [
     stack: "ReactJS, Pure CSS",
     website: "https://sprint-3-acamica.vercel.app/",
     repo: "https://github.com/DavidSalomonDev/sprint-3",
-    thumbnail: thumbGifos,
-    images: [
-      "/images/projects/gifos.png",
-      "/images/projects/gifos -1.png",
-      "/images/projects/gifos -2.png",
-      "/images/projects/gifos -3.png"
-    ]
+    thumbnail: imgGifos,
+    images: [imgGifos, imgGifos1, imgGifos2, imgGifos3]
   },
   {
     slug: "weather",
@@ -97,8 +89,8 @@ const projects = [
     stack: "HTML, CSS, JavaScript",
     website: "https://weather-davidsalomondev.vercel.app/",
     repo: "https://github.com/DavidSalomonDev/weather",
-    thumbnail: thumbWeather,
-    images: ["/images/projects/weather.png"]
+    thumbnail: imgWeather,
+    images: [imgWeather]
   }
 ];
 

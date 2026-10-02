@@ -15,6 +15,12 @@ export default class Document extends NextDocument {
         <Head>
           <link rel="icon" href="/images/buho-favicon.png" />
           <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+          {/* Next.js inlines this stylesheet and adds the preconnect at build time */}
+          <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap"
+          />
           <meta name="author" content="David Salomón Martínez Valladares" />
 
           <meta property="og:type" content="website" />

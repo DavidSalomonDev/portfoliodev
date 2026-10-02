@@ -12,7 +12,11 @@ const en = {
     projects: "Projects",
     posts: "Posts",
     contact: "Contact",
-    switchLanguage: "Ver en español"
+    switchLanguage: "Ver en español",
+    label: "Main navigation",
+    menu: "Open menu",
+    theme: "Toggle color theme",
+    skip: "Skip to content"
   },
 
   posts: {

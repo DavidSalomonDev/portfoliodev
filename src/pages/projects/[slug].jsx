@@ -73,7 +73,7 @@ const Project = ({ slug }) => {
         </List>
 
         {project.images.map((src) => (
-          <ProjectImage key={src} src={src} alt={text.title} />
+          <ProjectImage key={src.src} src={src} alt={text.title} />
         ))}
       </Container>
     </Layout>

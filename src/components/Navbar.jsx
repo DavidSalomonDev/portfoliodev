@@ -45,6 +45,7 @@ const Navbar = (props) => {
     <Box
       position="fixed"
       as="nav"
+      aria-label={t.nav.label}
       w="100%"
       bg={useColorModeValue("#FFFFFF40", "#20202380")}
       style={{ backdropFilter: "blur(10px)", zIndex: 1 }}
@@ -90,7 +91,7 @@ const Navbar = (props) => {
                 as={IconButton}
                 icon={<HamburgerIcon />}
                 variant="outline"
-                aria-label="Options"
+                aria-label={t.nav.menu}
               />
               <MenuList>
                 <NextLink href="/" passHref>

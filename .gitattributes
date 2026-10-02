@@ -1,0 +1,7 @@
+# Keep LF everywhere (matches prettier endOfLine) regardless of core.autocrlf
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.webp binary
+*.glb binary
+*.ico binary

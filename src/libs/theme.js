@@ -25,7 +25,8 @@ const components = {
   },
   Link: {
     baseStyle: (props) => ({
-      color: mode("#3D7AED", "#FF63C3")(props),
+      // Light value darkened from #3D7AED to meet WCAG AA (4.5:1) on #F0E7DB
+      color: mode("#2A62CC", "#FF63C3")(props),
       textUnderlineOffset: 3
     })
   }
